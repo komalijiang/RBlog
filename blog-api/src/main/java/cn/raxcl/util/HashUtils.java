@@ -37,7 +37,7 @@ public class HashUtils {
 	public static void main(String[] args) {
 		String s = "$2a$10$FtXrq62IN1ijFpEOc6pl.uWYTj21AsfrNA57fWcigEyMQ9F4wrCLu";
 		System.out.println(matchBc("123456", s));
-		System.out.println(getBc("123456"));
+		System.out.println(getBc("456789"));
 	}
 
 }
