@@ -18,13 +18,13 @@ spring:
       path: /RBlog
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://IP地址:端口号/数据库?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
-    username: 用户名
-    password: 密码
+    url: jdbc:mysql://119.29.185.1:3307/r_blog?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
   redis:
-    host: 用户名
-    password: 密码
-    port: 端口号
+    host: 119.29.185.1
+    password: littlebuster20
+    port: 6379
     timeout: 60s
   # 阿里云邮箱，port=25在Windows系统下有效，Linux系统需要改为465并将下面两行取消注释，其它邮箱服务商配置参考关键字"spring mail 服务器"
   # spring.mail.properties.mail.smtp.socketFactory.port=465
@@ -33,8 +33,8 @@ spring:
     host: smtp.qq.com
     port: 465
     protocol: smtps
-    username: 邮箱账号
-    password: 密码
+    username: 2834454554@qq.com
+    password: lxivdgbyxpuydhdd
     properties:
       mail:
         smtp:
@@ -88,8 +88,8 @@ upload:
     domain: https://cdn.xxxxxxx.com
 # mysql数据备份
 mysql-backup:
-  host: ip地址
-  port: 端口号
+  host: 172.17.0.2 
+  port: 22
   qi-niu-yun:
     path: C:\file\mysql_backup\mysql_dump
     accessKey: xxxxxxxx
